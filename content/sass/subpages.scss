@@ -62,6 +62,31 @@ section.course-one {
             padding-top: 20px;
             color: #39d199 !important;
         }
+        .gallery {
+            -moz-column-count: 6;
+            -moz-column-gap: 5px;
+            -webkit-column-count: 6;
+            -webkit-column-gap: 5px;
+            column-count: 6;
+            column-gap: 5px;
+            width: 100%;
+            padding-top: 0px;
+            margin: 20px 0;
+        }
+        @media only screen and (max-width: 800px) {
+            .gallery {
+                -moz-column-count: 4 !important;
+                -webkit-column-count: 4 !important;
+                column-count: 4 !important;
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .gallery {
+                -moz-column-count: 2 !important;
+                -webkit-column-count: 2 !important;
+                column-count: 2 !important;
+            }
+        }
     }
     p.more-info {
         font-weight: 700!important;
@@ -79,6 +104,12 @@ section.course-one {
     ul li.red {
         color: #db1d25;
         font-weight: 700 !important;
+        &.regular {
+            font-weight: 300 !important;
+            b {
+                font-weight: 700 !important
+            }
+        }
     }
     div > aside {
         width: 29.7288%;
@@ -86,6 +117,9 @@ section.course-one {
         float: left;
         background-color: #f5f5f5;
         padding: 20px;
+        h3 {
+            padding-top: 0 !important;
+        }
         h4 {
             font-size: 16px;
             color: #0073b9;
@@ -106,7 +140,7 @@ section.course-one {
         font-size: 18px;
         line-height: 22px;
         font-weight: 600 !important;
-        padding-top: 0;
+        padding-top: 30px;
         margin-top: 0;
         color: #164974;
         text-transform: uppercase;

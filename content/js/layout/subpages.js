@@ -9,6 +9,7 @@ require.config({
         "stellar": "../modules/plugins/stellar.min",
 		"elements": "../modules/plugins/elements.min",
         "owl": "../modules/plugins/owl.carousel.min",
+        "lightbox": "../modules/plugins/lightbox.min",
         "dropdown": "../_source/dropdowns"
 	},
     
@@ -23,6 +24,7 @@ require.config({
         "stellar": { deps:['jquery'], exports: "stellar" },
         "elements": { deps:['hmbrgr'], exports: "elements" },
         "dropdown": { deps:['jquery'], exports: "dropdown" },
+        "lightbox": { deps:['jquery'], exports: "lightbox" },
         "owl": { deps:['hmbrgr'], exports: "owl" }
         
 	},

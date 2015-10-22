@@ -1,4 +1,4 @@
-define(['jquery', 'hmbrgr', 'stellar', 'owl', 'dropdown'], function () {
+define(['jquery', 'hmbrgr', 'stellar', 'owl', 'dropdown', 'lightbox'], function () {
 	
 
     $(document).ready(function () {  
