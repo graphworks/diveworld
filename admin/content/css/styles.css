@@ -1,0 +1,72 @@
+.cleaner {
+    width: 100%;
+    height: auto;
+    clear: both;
+}
+
+.cleaner.h5 {
+    height: 5px !important;
+}
+
+.cleaner.h10 {
+    height: 10px !important;
+}
+
+.cleaner.h15 {
+    height: 15px !important;
+}
+
+.cleaner.h20 {
+    height: 20px !important;
+}
+
+.cleaner.h30 {
+    height: 30px !important;
+}
+
+.cleaner.h40 {
+    height: 40px !important;
+}
+
+.cleaner.h60 {
+    height: 60px !important;
+}
+
+.cleaner.h100 {
+    height: 100px !important;
+}
+
+span.block {
+    width: 20px;
+    height: 20px;
+    float: left;
+    display: block;
+}
+
+span.block.c_1 {
+    background-color: #A089C0;
+}/* web */
+
+span.block.c_2 {
+    background-color: #BF8DBF;
+}/* online */
+
+span.block.c_3 {
+    background-color: #DD82B6;
+}/* mobile */
+
+span.block.c_4 {
+    background-color: #FED45D;
+}/* creative */
+
+span.block.c_5 {
+    background-color: #C7DD75;
+}/* print and promo */
+
+span.block.c_6 {
+    background-color: #86CFC3;
+}/* tech */
+
+span.block.c_7 {
+    background-color: #7E9AA5;
+}/* film prod */

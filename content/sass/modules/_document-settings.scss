@@ -1,0 +1,37 @@
+// hard reset
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing(border-box);
+}
+    body { 
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: $document-bg;
+    }
+    section:not(footer section) {
+        background-color: $content-bg; 
+        max-width: $full-canvas-width; 
+        margin: 0 auto;
+    }
+    section.w100 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    footer {
+        padding: 20px 0;
+    }
+    .g-recaptcha {
+        width: 100%;
+        display: block;
+        float: left;
+    }
+
+a, a :hover {
+    cursor: pointer;
+}
+
+h6.made { font-size: 14px;}
+.made a {color: $graphworks-color !important; font-weight: bold;}
+.made .icon-love {color:#ed527d;}

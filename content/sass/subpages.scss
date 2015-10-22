@@ -1,0 +1,192 @@
+@import '_configuration';
+@import '_helpers';
+section.course-one {
+    h2 {
+        font-weight: bold;
+        padding-bottom: 30px;
+        span {
+            font-weight: 300 !important;
+        }
+    }
+}
+
+.download-pdf {
+    width: 100%;
+    height: auto;
+    display: block;
+    min-height: 25px;
+    padding-left: 30px;
+    margin: 6px 0;
+    font-weight: 700 !important;
+    color: #575757;
+    background: url(../image/icon-pdf.png) no-repeat left center;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+section.course-one {
+    padding-top: 10px;
+    div > main {
+        width: 65.5762%;
+        text-align: justify;
+        float: left;
+        p:first-child {
+            font-size: 18px;
+        }
+        h4 {
+            font-size: 16px;
+            color: #0073b9;
+            padding-top: 14px;
+            &.paros {
+                display: block;
+                float: left;
+                font-weight: 700 !important;
+                text-transform: uppercase;
+                color: #0073b9;
+                padding-bottom: 15px;
+            }
+        }
+        p {
+            font-size: 100%;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            padding-bottom: 15px;
+            font-size: 90%;
+        }
+        .success {
+            padding-top: 20px;
+            color: #39d199 !important;
+        }
+    }
+    p.more-info {
+        font-weight: 700!important;
+        line-height: 1.5;
+        padding-top: 15px;
+        a {
+            color: #3fabee;
+            text-decoration: underline;
+            &:hover {
+                color: darken(#3fabee, 20%);
+            }
+        }
+    }
+    p.red,
+    ul li.red {
+        color: #db1d25;
+        font-weight: 700 !important;
+    }
+    div > aside {
+        width: 29.7288%;
+        margin-left: 4.6949%;
+        float: left;
+        background-color: #f5f5f5;
+        padding: 20px;
+        h4 {
+            font-size: 16px;
+            color: #0073b9;
+            padding-top: 14px;
+        }
+        p {
+            font-size: 90%;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            padding-bottom: 15px;
+            font-size: 90%;
+        }
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600 !important;
+        padding-top: 0;
+        margin-top: 0;
+        color: #164974;
+        text-transform: uppercase;
+    }
+    span.time,
+    span.more-course {
+        color: #2ca4ed;
+        font-weight: 600 !important;
+        font-size: 90%;
+        width: 100%;
+        display: block;
+    }
+    span.rem_time {
+        color: #959595;
+        font-size: 12px;
+    }
+    span.price {
+        color: #2ca4ed;
+        font-size: 80%;
+        b {
+            font-size: 140% !important;
+        }
+    }
+    .btn_2,
+    .btn_3 {
+        &.normal {
+            padding: .7em 1.2em;
+            font-size: 0.8em;
+        }
+    }
+    .btn_2 {
+        background-color: #bababa;
+        &:hover {
+            background-color: darken(#bababa, 20%);
+        }
+    }
+    .btn_3 {
+        background-color: #39d199;
+        margin-right: 0;
+        &:hover {
+            background-color: darken(#39d199, 20%);
+        }
+    }
+    @media only screen and (max-width: 680px) {
+        h3 {
+            font-size: 18px;
+        }
+        h4 {
+            font-size: 16px;
+        }
+    }
+    @media only screen and (max-width: 880px) {
+        h3 {
+            font-size: 16px;
+        }
+        h4 {
+            font-size: 15px;
+        }
+    }
+}
+
+section.contact {
+    padding-top: 0;
+}
+
+@media only screen and (max-width: $medium) {
+    section {
+        padding-top: 10px;
+    }
+    div > main,
+    div > aside,
+    section.course-one div > main,
+    section.course-one div > aside {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+    section.course-one div > aside {
+        margin-top: 20px;
+    }
+}

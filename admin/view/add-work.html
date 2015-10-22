@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>graphworks Creative admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../content/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="../content/css/flat-ui.min.css" rel="stylesheet">
+
+    <link href="../content/css/lightbox.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <br/>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="#">graphworks creative</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-01">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Works</a>
+                    </li>
+                    <li class=""><a href="add-services.html">Services</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">admin <b class="caret"></b></a>
+                        <span class="dropdown-arrow"></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="col-md-12">
+            <h3>Add / Edit Work</h3>
+            <a href="add-work.html" class="btn btn-success pull-right"><span class="fui-plus-circle"></span> Add Work</a><br/><br/>
+            <div class="col-md-6">
+                <h4>1, Picture upload</h4>
+                <h6>Upload Banner Image</h6>
+                <input type="file">
+                <br/>
+                <br/>
+
+                <h6>Upload Reference Image</h6>
+                <input type="file">
+                <br/>
+                <select>
+                    <option>- Select size -</option>
+                    <option>1 Block</option>
+                    <option>2 Blocks</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <h4>2, Project Datas</h4>
+                <input type="text" placeholder="Website address (https://www...)" class="form-control" />
+                <br/>
+                <input type="text" placeholder="Facebook address (https://www.facebook.com/...)" class="form-control" />
+                <br/>
+                <input type="text" placeholder="Google Plus address (https://plus.google.com/...)" class="form-control" />
+                <br/>
+
+                <h6>Public?</h6>
+                <input type="checkbox" value="true" checked="checked" />
+                <br/>
+                <h6>Main Page?</h6>
+                <input type="checkbox" value="true" checked="checked" />
+            </div>
+
+            <div class="cleaner"></div>
+            <h4>3, Project descriptions (English - Hungarian)</h4>
+            <h6>Headline</h6>
+            <div class="col-md-6">
+                <input type="text" placeholder="Headline" class="form-control" />
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="Főcím" class="form-control" />
+            </div>
+            <div class="cleaner">
+                <br/>
+                <br/>
+            </div>
+
+            <h6>Sub headline</h6>
+            <div class="col-md-6">
+                <input type="text" placeholder="Sub headline" class="form-control" />
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="Alcím" class="form-control" />
+            </div>
+            <div class="cleaner">
+                <br/>
+                <br/>
+            </div>
+
+            <h6>Challenge</h6>
+            <div class="col-md-6">
+                <textarea class="col-md-6" rows="6" id="ckeditor-1">Challenge...</textarea>
+            </div>
+            <div class="col-md-6">
+                <textarea class="col-md-6" rows="6" id="ckeditor-2">Kihívás...</textarea>
+            </div>
+            <div class="cleaner">
+                <br/>
+                <br/>
+            </div>
+
+            <h6>How We did it?</h6>
+            <div class="col-md-6">
+                <textarea class="col-md-6" rows="6" id="ckeditor-3">How We did it?</textarea>
+            </div>
+            <div class="col-md-6">
+                <textarea class="col-md-6" rows="6" id="ckeditor-4">Hogyan bírkóztunk meg vele?</textarea>
+            </div>
+
+            <div class="cleaner">
+                <br/>
+                <br/>
+            </div>
+
+            <div class="col-md-12">
+                <h4>4, Add Services</h4>
+                <div class="col-md-4">
+                    <h6><span class="block c_1"></span>Website solutions</h6>
+                    <input type="checkbox" value="true" checked="checked" /> Weboldal tervezés és implementáció
+                    <br/>
+                    <input type="checkbox" value="true" /> Brand Marketing és Nyitóoldalak
+                    <br/>
+                    <input type="checkbox" value="true" /> Vállalati weboldalak
+                    <br/>
+                </div>
+
+                <div class="col-md-4">
+                    <h6><span class="block c_2"></span>Online Marketing</h6>
+                    <input type="checkbox" value="true" checked="checked" /> Weboldal tervezés és implementáció
+                    <br/>
+                    <input type="checkbox" value="true" /> Brand Marketing és Nyitóoldalak
+                    <br/>
+                    <input type="checkbox" value="true" /> Vállalati weboldalak
+                    <br/>
+                </div>
+
+                <div class="col-md-4">
+                    <h6><span class="block c_3"></span>Mobile Developement</h6>
+                    <input type="checkbox" value="true" checked="checked" /> Weboldal tervezés és implementáció
+                    <br/>
+                    <input type="checkbox" value="true" /> Brand Marketing és Nyitóoldalak
+                    <br/>
+                    <input type="checkbox" value="true" /> Vállalati weboldalak
+                    <br/>
+                </div>
+
+                <div class="cleaner">
+                    <br/>
+                    <br/>
+                </div>
+
+                <div class="col-md-4">
+                    <h6><span class="block c_4"></span>Creative Planning and Strategy</h6>
+                    <input type="checkbox" value="true" checked="checked" /> Weboldal tervezés és implementáció
+                    <br/>
+                    <input type="checkbox" value="true" /> Brand Marketing és Nyitóoldalak
+                    <br/>
+                    <input type="checkbox" value="true" /> Vállalati weboldalak
+                    <br/>
+                </div>
+
+                <div class="col-md-4">
+                    <h6><span class="block c_5"></span>Print and Promotion</h6>
+                    <input type="checkbox" value="true" checked="checked" /> Weboldal tervezés és implementáció
+                    <br/>
+                    <input type="checkbox" value="true" /> Brand Marketing és Nyitóoldalak
+                    <br/>
+                    <input type="checkbox" value="true" /> Vállalati weboldalak
+                    <br/>
+                </div>
+
+                <div class="col-md-4">
+                    <h6><span class="block c_6"></span>Tech solutions</h6>
+                    <input type="checkbox" value="true" checked="checked" /> Weboldal tervezés és implementáció
+                    <br/>
+                    <input type="checkbox" value="true" /> Brand Marketing és Nyitóoldalak
+                    <br/>
+                    <input type="checkbox" value="true" /> Vállalati weboldalak
+                    <br/>
+                </div>
+                
+                <div class="cleaner">
+                    <br/>
+                    <br/>
+                </div>
+
+                <div class="col-md-4">
+                    <h6><span class="block c_7"></span>Film and Photo Production</h6>
+                    <input type="checkbox" value="true" checked="checked" /> Weboldal tervezés és implementáció
+                    <br/>
+                    <input type="checkbox" value="true" /> Brand Marketing és Nyitóoldalak
+                    <br/>
+                    <input type="checkbox" value="true" /> Vállalati weboldalak
+                    <br/>
+                </div>
+                
+                
+                <div class="col-md-4">
+                    <h6>Add New Services</h6>
+                    <a href="add-services.html" class="btn btn-info"><span class="fui-plus-circle"></span> Add New Services</a><br/><br/>
+                </div>
+            </div>
+
+
+            <div class="cleaner">
+                <br/>
+                <br/>
+            </div>
+            <div class="col-md-12">
+                <h4>5, Main Section</h4>
+                <textarea class="col-md-6" rows="6" id="ckeditor-5">Main Content goes here...</textarea>
+                <div class="cleaner">
+                    <br/>
+                    <br/>
+                </div>
+                <textarea class="col-md-6" rows="6" id="ckeditor-6">Fő tartalom...</textarea>
+            </div>
+            <div class="col-md-12">
+                <div class="cleaner">
+                    <br/>
+                </div>
+                <a href="add-work.html" class="btn btn-success pull-right"><span class="fui-plus-circle"></span> Add Work</a><br/><br/>
+                <div class="cleaner">
+                    <br/>
+                    <br/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+    <script src="../content/js/vendor/jquery.min.js"></script>
+    <script src="../content/js/flat-ui.min.js"></script>
+
+    <script src="../content/js/lightbox.min.js"></script>
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('ckeditor-1');
+        CKEDITOR.replace('ckeditor-2');
+        CKEDITOR.replace('ckeditor-3');
+        CKEDITOR.replace('ckeditor-4');
+
+        CKEDITOR.replace('ckeditor-5', {
+            customConfig: '../ckeditor/config_2.js'
+        });
+        CKEDITOR.replace('ckeditor-6', {
+            customConfig: '../ckeditor/config_2.js'
+        });
+    </script>
+</body>
+
+</html>

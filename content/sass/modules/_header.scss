@@ -1,0 +1,205 @@
+// graphworks frameworks v3.0 - header, navigation
+///////////////////////////////////////////////////
+// Made by graphworks (@rpkaaa)
+header {
+    width: 100%;
+    display: block;
+    position: $nav-position;
+    top: 0px;
+    z-index: 9999999;
+    background-color: #FFFFFF;
+}
+
+section.first {
+    margin-top: $nav-height +5px;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    top: 115px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    z-index: 99999;
+    ul {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        float: none;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li {
+            display: block;
+            width: 100%;
+            height: 80px;
+            float: left;
+            &:last-child {
+                padding-bottom: 150px;
+            }
+            a {
+                display: block;
+                width: auto;
+                text-align: center;
+                text-decoration: none;
+                color: $nav-item-color;
+                &.current {
+                    background-color: $nav-item-color-current-bg;
+                    color: $nav-item-color-current;
+                }
+                &:hover {
+                    background-color: $nav-item-color-hover-bg;
+                    color: $nav-item-color-hover;
+                    @include transition(all, $transition-3, ease);
+                }
+                &a.current:hover {
+                    background-color: $nav-item-color-current-bg;
+                    color: $nav-item-color-current;
+                }
+            }
+        }
+    }
+}
+
+header .gridContainer a.logo {
+    float: left;
+    display: block;
+    height: $nav-height -80px;
+    width: $logo-width;
+    /* logowidth */
+    
+    min-width: $logo-min-width;
+    /* logo minwidth */
+    
+    max-width: $logo-max-width;
+    /* logo maxwidth */
+    
+    overflow-y: visible;
+    img {
+        display: block;
+        float: left;
+        vertical-align: middle;
+        height: 70px;
+        width: 100%;
+        margin: 0px;
+        padding-top: 8px;
+    }
+}
+
+header .scrooler ul#mobile_nav,
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: $medium) {
+    nav ul li {
+        height: 50px;
+        &:nth-child(1) {
+            margin-top: 0px !important;
+        }
+    
+    a {
+        height: 50px;
+        line-height: 50px;
+        @include rem(font-size, $headling1-font-size *0.6);
+    }
+        section.first {
+            margin-top: 110px;
+        }
+}
+}
+
+@media screen and (min-width: $medium) and (max-width: $large) {
+    nav ul li {
+        &:nth-child(1) {
+            margin-top: 0px !important;
+        }
+        a {
+            padding: $nav-item-padding /2;
+            text-align: center;
+            text-decoration: none;
+            @include rem(font-size, $headling1-font-size *1.0);
+        }
+    }
+    .pad17 {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: $large) {
+    nav ul li {
+        &:nth-child(1) {
+            margin-top: 0px !important;
+        }
+        a {
+            height: 80px;
+            line-height: 80px;
+            padding: $nav-item-padding /1.6;
+            @include rem(font-size, $headling1-font-size *1.0);
+        }
+    }
+}
+@media screen and (max-width: $large) {
+    #navigation {display:none;}
+    #hamburger {display: block;}
+}
+@media screen and (min-width: $large) {
+    #navigation {display:block;}
+    #hamburger {display: none;}
+}
+
+#header{
+    background: rgba(255, 255, 255, 1);
+	position:fixed;
+	width:100%;
+	z-index:10;
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    height: auto;
+}
+
+.hmbrgr {
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-top: 22px;
+}
+.hmbrgr span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: inline-block;
+}
+.hmbrgr.expand span:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.hmbrgr.expand span:nth-child(2) {
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.hmbrgr.expand span:nth-child(3) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hmbrgr.expand span:nth-child(1), .hmbrgr.expand span:nth-child(3) {
+    background-color: #71C8F1 !important;
+}

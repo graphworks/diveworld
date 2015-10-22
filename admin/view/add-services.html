@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>graphworks Creative admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../content/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="../content/css/flat-ui.min.css" rel="stylesheet">
+
+    <link href="../content/css/lightbox.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <br/>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <a class="navbar-brand" href="#">graphworks creative</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="navbar-collapse-01">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">Works</a>
+                    </li>
+                    <li class="active"><a href="add-services.html">Services</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">admin <b class="caret"></b></a>
+                        <span class="dropdown-arrow"></span>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="col-md-12">
+            <h3>Add / Edit Services</h3>
+            <a href="" class="btn btn-info pull-right"><span class="fui-plus-circle"></span> Add Service</a><br/><br/>
+            
+            <h4>1, Service name (English - Hungarian)</h4>
+            <h6>Service name</h6>
+            <div class="col-md-6">
+                <input type="text" placeholder="Service name" class="form-control" />
+                <br/>
+                <br/>
+            </div>
+            <div class="col-md-6">
+                <input type="text" placeholder="Szolgáltatás megnevezése" class="form-control" />
+                <br/>
+                <br/>
+            </div>
+
+            <div class="cleaner"></div>
+            <h4>2, Select Category</h4>
+            
+            <h6><input type="radio" class="category" /><span class="block c_1"></span>Website solutions</h6>
+            <h6><input type="radio" class="category" /><span class="block c_2"></span>Online Marketing</h6>
+            <h6><input type="radio" class="category" /><span class="block c_3"></span>Mobile Developement</h6>
+            <h6><input type="radio" class="category" /><span class="block c_4"></span>Creative Planning and Strategy</h6>
+            <h6><input type="radio" class="category" /><span class="block c_5"></span>Print and Promotion</h6>
+            <h6><input type="radio" class="category" /><span class="block c_6"></span>Tech solutions</h6>
+            <h6><input type="radio" class="category" /><span class="block c_7"></span>Film and Photo Production</h6>
+            
+            <div class="cleaner">
+                <br/>
+            </div>
+            
+            <a href="" class="btn btn-info pull-right"><span class="fui-plus-circle"></span> Add Service</a><br/><br/>
+            
+            <div class="cleaner">
+                <br/>
+                <br/>
+            </div>
+            
+            <h3>Services</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Service name</th>
+                        <th>Category</th>
+                        <th>Manage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Weboldal tervezés és implementáció
+                        </td>
+
+                        <td><span class="block c_2"></span>Online Marketing</td>
+                    
+                        <td>
+                            <a href=""><span class="fui-new text-info"></span></a>&nbsp;&nbsp;
+                            <a href=""><span class="fui-cross-circle text-danger"></span></a>
+      
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Brand Marketing és Nyitóoldalak
+                        </td>
+
+                        <td><span class="block c_1"></span>Website solutions</td>
+
+                        <td>
+                            <a href=""><span class="fui-new text-info"></span></a>&nbsp;&nbsp;
+                            <a href=""><span class="fui-cross-circle text-danger"></span></a>
+      
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Vállalati weboldalak
+                        </td>
+
+                        <td><span class="block c_1"></span>Website solutions</td>
+                        
+                        <td>
+                            <a href=""><span class="fui-new text-info"></span></a>&nbsp;&nbsp;
+                            <a href=""><span class="fui-cross-circle text-danger"></span></a>
+      
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+                    
+    </div>
+    <!-- /.container -->
+
+    <script src="../content/js/vendor/jquery.min.js"></script>
+    <script src="../content/js/flat-ui.min.js"></script>
+
+    <script src="../content/js/lightbox.min.js"></script>
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('ckeditor-1');
+        CKEDITOR.replace('ckeditor-2');
+        CKEDITOR.replace('ckeditor-3');
+        CKEDITOR.replace('ckeditor-4');
+
+        CKEDITOR.replace('ckeditor-5', {
+            customConfig: '../ckeditor/config_2.js'
+        });
+        CKEDITOR.replace('ckeditor-6', {
+            customConfig: '../ckeditor/config_2.js'
+        });
+    </script>
+</body>
+
+</html>
